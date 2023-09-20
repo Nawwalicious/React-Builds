@@ -1,0 +1,73 @@
+// Resetting default padding and margin
+*{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+// Styles for the login container
+.login-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+// Styles for the login box
+.login-box{
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    max-width: 35%;
+    height: 50vh;
+    width: 25vw;
+    padding: 2rem;
+    background-color: white;
+
+    // Styles for the login header
+    .login-header{
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+        margin-bottom: 2rem;
+        color: #495057;
+    }
+
+    // Styles for the input fields container
+    .input-fields{
+        display: flex;
+        flex-direction: column;
+
+        // Styles for the username and password fields
+        .username-field, .password-field{
+            margin-bottom: 1rem;
+
+            label{
+                font-size: 1rem;
+                color: #495057;
+            }
+
+            input{
+                width: 100%;
+                padding: 0.375rem 0.75rem;
+                border-radius: 0.25rem;
+                border: 1px solid #ced4da;
+            }
+        }
+    }
+
+    // Styles for the login button
+    .login-button {
+        display: block;
+        width: 100%;
+        padding: 0.375rem 0.75rem;
+        background-color: #007bff;
+        border-radius: 0.25rem;
+        border: none;
+        color:white;
+
+        &:hover {
+            background-color:#0056b3; 
+        }
+    }
+}

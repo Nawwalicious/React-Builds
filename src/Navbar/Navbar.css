@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbarRoot{
+    padding: 15px;
+    display: flex;
+    flex: 1;
+    min-height: 7.5vh;
+    background-color: rgb(251, 150, 167);
+}
+
+.navbarRoot span{
+    display:flex;
+    flex-direction:row;
+}
+
+.navbarRoot ul{
+    display: flex;
+}
+
+.navbarRoot ul li{
+    list-style: none;
+    margin-right: 45px;
+    margin-top: 5px;
+}
+
+.navbarRoot ul li a{
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+    font-size: large;
+}
+
+.navbarRoot ul li a:hover{
+    color: rgb(4, 105, 88);
+    text-shadow: black;
+}

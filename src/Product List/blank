@@ -1,0 +1,36 @@
+            <div className="product">
+                <img src={Products[0].image} alt="S23"/>
+                <p>Model:{Products[0].name}</p>
+                <p>Price:${Products[0].price}</p>
+                <p>Memory:{Products[0].memory}</p>
+            </div>
+            <div className="product">
+                <img src={Products[1].image} alt="S23"/>
+                <p>Model:{Products[1].name}</p>
+                <p>Price:${Products[1].price}</p>
+                <p>Memory:{Products[1].memory}</p>
+            </div>
+            <div className="product">
+                <img src={Products[2].image} alt="S22"/>
+                <p>Model:{Products[2].name}</p>
+                <p>Price:${Products[2].price}</p>
+                <p>Memory:{Products[2].memory}</p>
+            </div>
+            <div className="product">
+                <img src={Products[3].image} alt="S22"/>
+                <p>Model:{Products[3].name}</p>
+                <p>Price:${Products[3].price}</p>
+                <p>Memory:{Products[3].memory}</p>
+            </div>
+            <div className="product">
+                <img src={Products[4].image} alt="S21"/>
+                <p>Model:{Products[4].name}</p>
+                <p>Price:${Products[4].price}</p>
+                <p>Memory:{Products[4].memory}</p>
+            </div>
+            <div className="product">
+                <img src={Products[5].image} alt="S21"/>
+                <p>Model:{Products[5].name}</p>
+                <p>Price:${Products[5].price}</p>
+                <p>Memory:{Products[5].memory}</p>
+            </div>

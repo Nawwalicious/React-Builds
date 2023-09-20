@@ -1,0 +1,31 @@
+import { useState } from 'react'
+import Home from './Home/Home'
+import Products from './Product List/Products'
+import UserList from './User List/UserList'
+import Navbar from './Navbar/Navbar'
+import Login from './Login/Login'
+import Nav from './Navbar/Nav'
+
+import Test from './Test/Test'
+
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+
+function App() {
+
+  return (
+    <>
+      <BrowserRouter> {/*Can also be written in ||main.jsx|| instead of here.i.e, ||<B..R..> <App/> </B..R..>||   */}
+                  <Nav/>
+                  <Routes>
+                        <Route path="/" element={<Home/>}/>
+                        <Route path="/Products" element={<Products/>}/>
+                        <Route path="/UserList" element={<UserList/>}/>
+                        <Route path="/Login" element={<Login/>}/>
+                        <Route path='*' element={<Navigate to="/"/>}/>   {/*This is to handle Routes for Undefined Redirects*/}
+                  </Routes>                                              {/*Always remember to import Navigate from react-router-dom*/}
+      </BrowserRouter>
+    </>
+  )
+}
+
+export default App
